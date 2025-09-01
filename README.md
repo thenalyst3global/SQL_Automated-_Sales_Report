@@ -49,9 +49,9 @@ SQL Server stored procedures were created to automate reporting, and the results
 ---
 
 ## Quantified Results
-- 📉 **60–70% reduction** in manual reporting effort  
-- ✅ **Consistent & accurate** outputs across departments  
-- 🚀 **Real-time insights** available via Power BI dashboards  
+- **60–70% reduction** in manual reporting effort  
+- **Consistent & accurate** outputs across departments  
+- **Real-time insights** available via Power BI dashboards  
 
 ---
 
@@ -97,6 +97,13 @@ The automated SQL outputs power an **interactive Power BI dashboard**, enabling 
 
 ---
 
+## 📥 Download Portfolio Project  
+- `Portfolio Project`: [Download Full PDF Report](https://github.com/user-attachments/files/22079444/Sales_Report_Portfolio_Bernard.Joseph.pdf)
+
+
+---
+
 ## Author
 **Bernard Joseph** — Business Intelligence & Data Analyst  
 **Focus:** Automating reporting and delivering decision-ready analytics  
+🔗 [LinkedIn](https://www.linkedin.com/in/bernard-joseph-oyakhilome) | 🌐 [Portfolio](https://thenalyst3global.github.io/Sales-Inventory_Analysis/#1-background-and-overvie) | 📧 [Email](mailto:jozefbernardonline@gmail.com)
