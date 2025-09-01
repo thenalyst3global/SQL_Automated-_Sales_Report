@@ -1,107 +1,102 @@
-# Automated Sales Report (SQL Server)
+# Automated Sales Reporting with SQL Server & Power BI
+
+## One-Line Takeaway
+Automated SQL + Power BI solution that cut sales reporting time by **70%**, delivering real-time insights across product, store, and region performance.
+
+---
 
 ## Table of Contents
-1. [Project Inspiration](#project-inspiration)  
-2. [Project Context](#project-context)  
-3. [Project Goal](#project-goal)  
-4. [Quantified Results](#quantified-results)  
-5. [How It Helps Stakeholders](#how-it-helps-stakeholders)  
-6. [Project Usage](#project-usage)  
-7. [Download SQL File & Dataset](#download-sql-file--dataset)  
-8. [Future Improvements](#future-improvements)  
-9. [Project Takeaways](#project-takeaways)  
+1. [Business Problem](#business-problem)  
+2. [Project Inspiration](#project-inspiration)  
+3. [Project Context](#project-context)  
+4. [Project Goal](#project-goal)  
+5. [Quantified Results](#quantified-results)  
+6. [Business Impact](#business-impact)  
+7. [How It Helps Stakeholders](#how-it-helps-stakeholders)  
+8. [Power BI Dashboard & Insights](#power-bi-dashboard--insights)  
+9. [Key Skills Demonstrated](#key-skills-demonstrated)  
+10. [Author](#author)  
+
+---
+
+## Business Problem
+The organization relied on **manual sales reporting**, which caused delays in decision-making and inconsistent insights.  
+Sales managers, executives, and regional teams lacked timely visibility into sales trends across products and regions.
 
 ---
 
 ## Project Inspiration
-I noticed many organizations still rely on manual Excel work to prepare sales reports. This often takes hours every week. To solve this, I created an **automated SQL Server procedure** that instantly generates daily, weekly, or monthly sales reports with just one command.  
+I noticed that reporting teams spent hours each week preparing the same daily, weekly, and monthly reports in Excel.  
+This inspired me to automate reporting with **SQL Server** and connect it to **Power BI** for self-serve insights.
 
 ---
 
 ## Project Context
-The project uses a **Retail Superstore dataset** that contains:  
-- 🛒 Sales transactions  
-- 📦 Product information  
-- 🏬 Store details  
+The project uses a **Retail Superstore dataset** containing:  
+- Sales transactions  
+- Product details  
+- Store information  
 
-This procedure automates reporting so that insights are delivered faster and more consistently.
+SQL Server stored procedures were created to automate reporting, and the results were integrated with **Power BI dashboards** for easy access.
 
 ---
 
 ## Project Goal
-The project aims to:  
-- ⏱️ **Save time** – reduce reporting from hours to seconds  
-- ⚡ **Offer flexibility** – generate daily, weekly, or monthly summaries  
-- 📊 **Provide insights** – breakdown by product, store, and region  
+- ⏱️ **Save Time** – Reduce reporting turnaround from hours to seconds  
+- ⚙️ **Be Flexible** – On-demand **Daily / Weekly / Monthly** summaries  
+- 📊 **Deliver Insights** – Track top products, regions, and store performance  
 
 ---
 
 ## Quantified Results
-If deployed in a business environment, this project can achieve:  
-- 📉 **60–70% reduction** in manual reporting time  
-- ✅ More accurate and reliable reports  
-- 🚀 Faster decision-making with real-time access to insights  
+- 📉 **60–70% reduction** in manual reporting effort  
+- ✅ **Consistent & accurate** outputs across departments  
+- 🚀 **Real-time insights** available via Power BI dashboards  
+
+---
+
+## Business Impact
+**Before:**  
+- 6–8 hours weekly spent on manual reporting  
+- Risk of errors and inconsistent Excel outputs  
+
+**After:**  
+- Automated SQL + Power BI → **instant insights**  
+- Consistent reporting across Sales, Finance, and Operations  
+- Leaders access **live dashboards** anytime  
 
 ---
 
 ## How It Helps Stakeholders
-- **Sales Managers** → Track sales by product and store daily/weekly/monthly  
+- **Sales Managers** → Monitor daily and weekly momentum by product and store  
 - **Regional Managers** → Compare store performance across locations  
-- **Executives** → Get monthly summaries for business growth tracking  
-- **Finance & Operations Teams** → Access standardized and accurate data  
-
-Reports can be embedded in **Power BI dashboards** or exported to Excel for sharing.
+- **Executives** → Access quick monthly revenue snapshots  
+- **Finance & Operations** → Use reliable data for planning and budgeting  
 
 ---
 
-## Project Usage
+## Power BI Dashboard & Insights
+The automated SQL outputs power an **interactive Power BI dashboard**, enabling drill-down by date, store, product, and region.
 
-### 1. Create the Stored Procedure
-Run the SQL script in your SQL Server database.  
-👉 See full script here: [`GetSalesReport.sql`](GetSalesReport.sql)
+![Sales Report Dashboard](overall.JPG)
 
-### 2. Generate Reports
-Run the procedure with different parameters:
-
-```sql
--- Daily Report
-EXEC dbo.GetSalesReport @ReportType = 'Daily';
-
--- Weekly Report
-EXEC dbo.GetSalesReport @ReportType = 'Weekly';
-
--- Monthly Report
-EXEC dbo.GetSalesReport @ReportType = 'Monthly';
-
--- Example with filters
-EXEC dbo.GetSalesReport 
-    @ReportType = 'Monthly',
-    @StoreID = 3,
-    @ProductID = 101,
-    @DateFrom = '2024-01-01',
-    @DateTo = '2024-06-30';
-```
+### Key Insights
+- **Weekly Trend:** Stable sales with spikes during promotions  
+- **Monthly Trend:** Strong January (~9.9%), steady 8–9% thereafter  
+- **Top Products:** Coffee (~39%) and Tea (~28%) dominate sales  
+- **Daily Pattern:** Mon–Tue peak (>16%), Sunday rebound (~14%)  
+- **Regional View:** London, Nigeria, and Paris are leading contributors  
 
 ---
 
-## Download SQL File & Dataset
-📂 [Download `GetSalesReport.sql`](./GetSalesReport.sql)  
-📂 [Download Dataset](./RetailSuperstore_Dataset.csv)  
-
-*(Upload both files in your GitHub repo root folder so these links work.)*
-
----
-
-## Future Improvements
-- ⬇️ Automatic export to Excel/CSV  
-- ⏰ Schedule with SQL Agent  
-- 📊 Direct integration with Power BI  
-- 📆 Add YTD and QTD comparisons  
+## Key Skills Demonstrated
+- **SQL Server:** Stored procedures, aggregations, automated reporting  
+- **Power BI:** Data modeling, visualization, dashboard design  
+- **Business Analysis:** Translating stakeholder needs into analytics solutions  
+- **Data Storytelling:** Presenting insights for decision-making  
 
 ---
 
-## Project Takeaways
-This project proves how a simple SQL automation can:  
-- Save **hours of manual reporting**  
-- Provide **accurate and consistent insights**  
-- Enable **faster business decisions**
+## Author
+**Bernard Joseph** — Business Intelligence & Data Analyst  
+**Focus:** Automating reporting and delivering decision-ready analytics  
